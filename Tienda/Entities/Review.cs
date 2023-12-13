@@ -1,9 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Entities.Models
+namespace Entities
 {
     public class Review
     {
+        [Key]
         public int ReviewID { get; set; }
         public int? CustomerID { get; set; }
         public int? ProductID { get; set; }

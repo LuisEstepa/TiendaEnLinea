@@ -5,11 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities.Models
+namespace Entities
 {
     public class Supplier
     {
         [Display(Name = "ID")]
+        [Key]
         public int SupplierID { get; set; }
 
         [Display(Name = "Company Name")]

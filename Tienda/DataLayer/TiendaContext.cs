@@ -1,11 +1,5 @@
 ﻿using Entities;
-using Entities.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataLayer
 {
@@ -27,7 +21,7 @@ namespace DataLayer
         public DbSet<SysDiagram> sysdiagrams { get; set; }
         public DbSet<WishList> Wishlists { get; set; }
         public DbSet<AdminEmployee> AdminEmployee { get; set; }
-        public DbSet<AdminLogin> AdminLogins { get; set; }
+        public DbSet<AdminLogin> AdminLogin { get; set; }
         public DbSet<Order> Orders { get; set; }
 
         public TiendaContext(DbContextOptions<TiendaContext> options) : base(options) { }

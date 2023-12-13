@@ -1,7 +1,10 @@
-﻿namespace Entities.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Entities
 {
     public class ShippingDetail
     {
+        [Key]
         public int ShippingID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
