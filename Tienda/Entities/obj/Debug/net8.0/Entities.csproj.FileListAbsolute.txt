@@ -9,3 +9,16 @@ C:\DEVLUIS\TiendaVirtual\Tienda\Entities\obj\Debug\net8.0\Entities.dll
 C:\DEVLUIS\TiendaVirtual\Tienda\Entities\obj\Debug\net8.0\refint\Entities.dll
 C:\DEVLUIS\TiendaVirtual\Tienda\Entities\obj\Debug\net8.0\Entities.pdb
 C:\DEVLUIS\TiendaVirtual\Tienda\Entities\obj\Debug\net8.0\ref\Entities.dll
+D:\Proyectos\TiendaEnLinea\Tienda\Entities\bin\Debug\net8.0\Entities.deps.json
+D:\Proyectos\TiendaEnLinea\Tienda\Entities\bin\Debug\net8.0\Entities.dll
+D:\Proyectos\TiendaEnLinea\Tienda\Entities\bin\Debug\net8.0\Entities.pdb
+D:\Proyectos\TiendaEnLinea\Tienda\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
+D:\Proyectos\TiendaEnLinea\Tienda\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos\TiendaEnLinea\Tienda\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+D:\Proyectos\TiendaEnLinea\Tienda\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+D:\Proyectos\TiendaEnLinea\Tienda\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+D:\Proyectos\TiendaEnLinea\Tienda\Entities\obj\Debug\net8.0\Entities.sourcelink.json
+D:\Proyectos\TiendaEnLinea\Tienda\Entities\obj\Debug\net8.0\Entities.dll
+D:\Proyectos\TiendaEnLinea\Tienda\Entities\obj\Debug\net8.0\refint\Entities.dll
+D:\Proyectos\TiendaEnLinea\Tienda\Entities\obj\Debug\net8.0\Entities.pdb
+D:\Proyectos\TiendaEnLinea\Tienda\Entities\obj\Debug\net8.0\ref\Entities.dll
