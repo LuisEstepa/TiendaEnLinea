@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Entities.Models
+namespace Entities
 {
     public class Product
     {
+        [Key]
         public int ProductID { get; set; }
         public string Name { get; set; }
         public int SupplierID { get; set; }
