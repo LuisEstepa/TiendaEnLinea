@@ -9,3 +9,15 @@ C:\DEVLUIS\TiendaVirtual\Tienda\BusinessLayer\obj\Debug\net8.0\BusinessLayer.dll
 C:\DEVLUIS\TiendaVirtual\Tienda\BusinessLayer\obj\Debug\net8.0\refint\BusinessLayer.dll
 C:\DEVLUIS\TiendaVirtual\Tienda\BusinessLayer\obj\Debug\net8.0\BusinessLayer.pdb
 C:\DEVLUIS\TiendaVirtual\Tienda\BusinessLayer\obj\Debug\net8.0\ref\BusinessLayer.dll
+D:\Proyectos\TiendaEnLinea\Tienda\BusinessLayer\bin\Debug\net8.0\BusinessLayer.deps.json
+D:\Proyectos\TiendaEnLinea\Tienda\BusinessLayer\bin\Debug\net8.0\BusinessLayer.dll
+D:\Proyectos\TiendaEnLinea\Tienda\BusinessLayer\bin\Debug\net8.0\BusinessLayer.pdb
+D:\Proyectos\TiendaEnLinea\Tienda\BusinessLayer\obj\Debug\net8.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos\TiendaEnLinea\Tienda\BusinessLayer\obj\Debug\net8.0\BusinessLayer.AssemblyInfoInputs.cache
+D:\Proyectos\TiendaEnLinea\Tienda\BusinessLayer\obj\Debug\net8.0\BusinessLayer.AssemblyInfo.cs
+D:\Proyectos\TiendaEnLinea\Tienda\BusinessLayer\obj\Debug\net8.0\BusinessLayer.csproj.CoreCompileInputs.cache
+D:\Proyectos\TiendaEnLinea\Tienda\BusinessLayer\obj\Debug\net8.0\BusinessLayer.sourcelink.json
+D:\Proyectos\TiendaEnLinea\Tienda\BusinessLayer\obj\Debug\net8.0\BusinessLayer.dll
+D:\Proyectos\TiendaEnLinea\Tienda\BusinessLayer\obj\Debug\net8.0\refint\BusinessLayer.dll
+D:\Proyectos\TiendaEnLinea\Tienda\BusinessLayer\obj\Debug\net8.0\BusinessLayer.pdb
+D:\Proyectos\TiendaEnLinea\Tienda\BusinessLayer\obj\Debug\net8.0\ref\BusinessLayer.dll
