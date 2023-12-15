@@ -1,9 +1,12 @@
 ﻿using DataLayer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 using Tienda.Models;
 
 namespace Tienda.Controllers
 {
+    [Authorize]
     public class DashboardController : Controller
     {
         private readonly TiendaContext _dbContext;
@@ -40,7 +43,7 @@ namespace Tienda.Controllers
                 string date = item.period.ToString().Split(new[] { (' ') }, StringSplitOptions.None)[0];
                 aa.Add(new AreaCharts() { period = date, sales = item.sales.GetValueOrDefault() });
             }
-            return Json(aa, System.Web.Mvc.JsonRequestBehavior.AllowGet);
+            return Json(aa, new JsonSerializerOptions());
         }
 
         //Circle Graph
@@ -58,7 +61,7 @@ namespace Tienda.Controllers
                                 })
                     .OrderByDescending(x => x.value)
                     .Take(3);
-            return Json(dataforchart, System.Web.Mvc.JsonRequestBehavior.AllowGet);
+            return Json(dataforchart, new JsonSerializerOptions());
         }
 
 
@@ -79,7 +82,7 @@ namespace Tienda.Controllers
                 string date = item.Order_Date.ToString().Split(new[] { (' ') }, StringSplitOptions.None)[0];
                 aa.Add(new LineCharts() { Date = date, Orders = item.Count });
             }
-            return Json(aa, System.Web.Mvc.JsonRequestBehavior.AllowGet);
+            return Json(aa, new JsonSerializerOptions());
         }
 
         //Bar Grap
@@ -97,7 +100,8 @@ namespace Tienda.Controllers
                                    })
                               .OrderByDescending(x => x.Sales_Amount)
                               .Take(6);
-            return Json(dataforBarchart, System.Web.Mvc.JsonRequestBehavior.AllowGet);
+            return Json(dataforBarchart, new JsonSerializerOptions());
+            
         }
     }
 }

@@ -23,6 +23,7 @@ namespace DataLayer
         public DbSet<AdminEmployee> AdminEmployee { get; set; }
         public DbSet<AdminLogin> AdminLogin { get; set; }
         public DbSet<Order> Orders { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
         public TiendaContext(DbContextOptions<TiendaContext> options) : base(options) { }
 

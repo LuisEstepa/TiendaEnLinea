@@ -1,9 +1,11 @@
 ﻿using DataLayer;
 using Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Tienda.Controllers
 {
+    [Authorize]
     public class AdminLoginController : Controller
     {
         private readonly TiendaContext _dbContext;
@@ -14,6 +16,11 @@ namespace Tienda.Controllers
             _logger = logger;
             _dbContext = _db;
         }
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         [HttpPost]
         public IActionResult Login(AdminLogin login)
         {
@@ -35,11 +42,8 @@ namespace Tienda.Controllers
         public ActionResult Logout()
         {
             HttpContext.Session.Clear();
-            return RedirectToAction("Index", "admin_Login");
+            return RedirectToAction("Index", "AdminLogin");
         }
-        public IActionResult Index()
-        {
-            return View();
-        }
+        
     }
 }

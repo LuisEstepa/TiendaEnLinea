@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entities
 {
-    public class TemData
+    public static class TemData
     {
         [Key]
         public static int EmpID { get; set; }

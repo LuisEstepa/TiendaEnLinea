@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using DataLayer;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Tienda.Controllers
 {
+    [Authorize]
     public class ProfileController : Controller
     {
         private readonly TiendaContext _dbcontext;

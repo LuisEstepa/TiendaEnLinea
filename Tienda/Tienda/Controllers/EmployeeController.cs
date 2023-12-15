@@ -1,10 +1,12 @@
 ﻿using DataLayer;
 using Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Tienda.Controllers
 {
+    [Authorize]
     public class EmployeeController : Controller
     {
         private readonly TiendaContext _dbContext;

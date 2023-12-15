@@ -1,9 +1,11 @@
 ﻿using DataLayer;
 using Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Tienda.Controllers
 {
+    [Authorize]
     public class OrderController : Controller
     {
         private readonly TiendaContext _dbContext;
