@@ -1,10 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Entities.Models
+namespace Entities
 {
     public class Employee
     {
         [Display(Name = "ID")]
+        [Key]
         public int EmpID { get; set; }
 
         [Required, RegularExpression(@"^[a-zA-Z\s]+$", ErrorMessage = "Name contains only Alphabets")]

@@ -577,31 +577,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USUARIO\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {},
-    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\DESKTOP-LUIS\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Proyectos\\TiendaEnLinea\\Tienda\\DataLayer\\DataLayer.csproj",
+      "projectUniqueName": "C:\\DEVLUIS\\TiendaVirtual\\Tienda\\Tienda\\DataLayer\\DataLayer.csproj",
       "projectName": "DataLayer",
-      "projectPath": "D:\\Proyectos\\TiendaEnLinea\\Tienda\\DataLayer\\DataLayer.csproj",
-      "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-      "outputPath": "D:\\Proyectos\\TiendaEnLinea\\Tienda\\DataLayer\\obj\\",
+      "projectPath": "C:\\DEVLUIS\\TiendaVirtual\\Tienda\\Tienda\\DataLayer\\DataLayer.csproj",
+      "packagesPath": "C:\\Users\\DESKTOP-LUIS\\.nuget\\packages\\",
+      "outputPath": "C:\\DEVLUIS\\TiendaVirtual\\Tienda\\Tienda\\DataLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
-        "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+        "C:\\Users\\DESKTOP-LUIS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -610,8 +602,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
-        "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -619,8 +609,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Proyectos\\TiendaEnLinea\\Tienda\\Entities\\Entities.csproj": {
-              "projectPath": "D:\\Proyectos\\TiendaEnLinea\\Tienda\\Entities\\Entities.csproj"
+            "C:\\DEVLUIS\\TiendaVirtual\\Tienda\\Tienda\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\DEVLUIS\\TiendaVirtual\\Tienda\\Tienda\\Entities\\Entities.csproj"
             }
           }
         }

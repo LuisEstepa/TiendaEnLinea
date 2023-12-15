@@ -1,0 +1,104 @@
+﻿@model Entities.AdminLogin
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login-IMS</title>
+    @section stryle {
+        <link href="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\css\bootstrap.rtl.min.css" rel="stylesheet" />
+        <link href="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\css\bootstrap.min.css" rel="stylesheet" />
+        <link href="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\css\bootstrap.rtl.css" rel="stylesheet" />
+        <link href="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\css\bootstrap.css" rel="stylesheet" />
+        <a href="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\css\bootstrap.min.css.map">c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\css\bootstrap.min.css.map</a>
+        <a href="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\css\bootstrap.rtl.min.css.map">c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\css\bootstrap.rtl.min.css.map</a>
+        <a href="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\css\bootstrap.rtl.css.map">c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\css\bootstrap.rtl.css.map</a>
+        <a href="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\css\bootstrap.css.map">c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\css\bootstrap.css.map</a>
+
+        <style>
+            .adminHeading {
+                font-size: 36px;
+                margin-left: 450px;
+                color: white;
+                margin-bottom: 50px;
+            }
+        </style>
+    }
+</head>
+<body>
+    <div class="container">
+        @using (Html.BeginForm("Login", "AdminLogin", FormMethod.Post, new { @id = "loginForm" }))
+        {
+            @Html.ValidationSummary(true)
+            @Html.AntiForgeryToken()
+            <h1 class="adminHeading">Admin Panel</h1>
+            <div class="row col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Login To Your Account
+                    </div><br />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="panel-body">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control", @name = "username", @placeholder = "Username" } })
+                            @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger " })
+
+                        </div>
+                        <br />
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @name = "password", @type = "password", @placeholder = "Password" } })
+                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6">
+                                <div class="checkbox ">
+                                    <label>
+                                        <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-6">
+                                <div class="form-group">
+                                    <div class="pull-right">
+                                        <button type="submit" id="btn-login" class="btn btn-success">Login</button>
+
+                                    </div><br /><br />
+                                    <div class="pull-right">
+                                        <a href="#" class="small">Forgot password ?</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    @section scripts{
+        <a href="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.bundle.js.map">c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.bundle.js.map</a>
+        <a href="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.bundle.min.js.map">c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.bundle.min.js.map</a>
+        <a href="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.esm.min.js.map">c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.esm.min.js.map</a>
+        <a href="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.min.js.map">c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.min.js.map</a>
+        <a href="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.js.map">c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.js.map</a>
+        <a href="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.esm.js.map">c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.esm.js.map</a>
+        <script src="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.esm.min.js"></script>
+        <script src="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.js"></script>
+        <script src="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.bundle.js"></script>
+        <script src="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.bundle.min.js"></script>
+        <script src="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.min.js"></script>
+        <script src="c:\users\usuario\.nuget\packages\bootstrap\5.3.2\contentfiles\any\any\wwwroot\js\bootstrap.esm.js"></script>
+    }
+</body>
+</html>

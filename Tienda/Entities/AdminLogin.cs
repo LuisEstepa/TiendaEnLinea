@@ -14,10 +14,16 @@ namespace Entities
         [Key]
         public int LoginID { get; set; }
         public int EmpID { get; set; }
-        public int UserName { get; set; }
-        public int Password { get; set; }
-        public int RoleType { get; set; }
-        public int Notes { get; set; }
+        public string UserName { get; set; }
+        public string Password { get; set; }
+        public int? RoleType { get; set; }
+        public string Notes { get; set; }
+
+        [ForeignKey("EmpID")]
+        public virtual AdminEmployee admin_Employee { get; set; }
+
+        [ForeignKey("RoleType")]
+        public virtual Role Role { get; set; }
 
     }
 }
